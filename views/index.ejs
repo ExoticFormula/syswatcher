@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+   
+ 
+   
+   
+</head>
+<body>
+    
+   
+    <div class="container align-items-center">
+        <h1>CPU RAM MONITOR</h1>
+        <div class="user">
+            Hello
+        </div>
+        <div class="os">OS Type:</div>
+        <label for="cpu" class="cpu-label">CPU 0%</label>
+        <progress class="cpu-bar" id="cpu" value="10" min='0' max="100"></progress>
+        <label for="ram" class="ram-label">RAM 0%</label>
+        <progress class="ram-bar" id="ram" value="10" min='0' max="100"></progress>
+
+    </div>
+    <hr>
+    <center>
+        <img src="cpu.jpg" alt="">
+
+
+    </center>
+    
+ 
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/main.js"></script>
+
+    <center>
+        <footer>
+            Made by apolloxd2004
+        </footer>
+
+    </center>
+   
+</body>
+</html>
+
+
