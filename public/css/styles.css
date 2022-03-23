@@ -25,11 +25,16 @@ h1{
     color: white;
     font-family: 
 }
-
+a{
+    color: white;
+}
 .fontcol{
     color: white;
 }
 img{
     margin-top: 10px;
    height: 400px;
+}
+img:hover{
+    transform: scale(0.994);
 }
