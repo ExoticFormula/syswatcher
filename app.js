@@ -18,7 +18,7 @@ app.get('/',(req,res)=>{
     res.render('index')
 })
 
-const cpu = osUtils.cpu
+const cpu =  osUtils.cpu
 const username = os.userInfo([{encoding:"buffer"}]).username
 const osInfo = os.type();
 //socketio
