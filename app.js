@@ -1,4 +1,4 @@
-//imports
+
 const express = require('express');
 const http = require('http')
 const app = express();
@@ -7,7 +7,7 @@ const io = require('socket.io')(httpServer)
 const osUtils=  require('node-os-utils')
 const os = require('os')
 
-//setting view engine
+
 app.set('view engine', 'ejs')
 app.use(express.static(__dirname+'/public'));
 
@@ -21,8 +21,9 @@ app.get('/',(req,res)=>{
 const cpu =  osUtils.cpu
 const username = os.userInfo([{encoding:"buffer"}]).username
 const osInfo = os.type();
-//socketio
 
+
+//socketio
 io.on('connection',socket=>{
     console.log(`${socket.id} connected`);
 
